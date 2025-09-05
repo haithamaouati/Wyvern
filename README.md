@@ -3,5 +3,5 @@
   <br><b>Wyvern</b></p>
   
   <p align="center">
-    A repo that fetches & lists all Termux available package info such as package, version, description, and homepage.
+    A repository that fetches and lists all available Termux packages, including package name, version, description, and homepage.
   </p>
