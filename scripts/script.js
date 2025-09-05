@@ -2,7 +2,7 @@ let packagesData = [];
 let currentLetter = null;
 
 // Load JSON data
-fetch('packages.json')
+fetch('data/packages.json')
   .then(res => res.json())
   .then(data => {
     packagesData = data;
