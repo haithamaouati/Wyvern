@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="125" height="125" src="logo.png">
+  <img width="125" height="125" src="assets/logo.png">
   <br><b>Wyvern</b></p>
   
   <p align="center">
