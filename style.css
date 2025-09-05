@@ -1,0 +1,202 @@
+/* General body */
+body {
+  margin: 0;
+  font-family: 'Kode Mono', monospace;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Logo & Title */
+img.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #ff0000;
+  margin: 5px 0;
+  font-size: 2.2em;
+}
+
+p.description {
+  margin: 5px 0 5px 0;
+  font-size: 1.1em;
+  max-width: 400px;
+}
+
+.highlight {
+  color: #ff0000;
+}
+
+.highlight-link {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.highlight-link:hover {
+  text-decoration: underline;
+}
+
+/* Stats */
+#stats {
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+/* Search field */
+#search {
+  width: 80%;
+  max-width: 400px;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Kode Mono', monospace;
+  font-size: 1em;
+}
+
+#search::placeholder {
+  color: #aaaaaa;
+}
+
+/* A-Z Filter */
+#letter-filter {
+  margin-bottom: 15px;
+}
+#letter-filter span {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#letter-filter span:hover,
+#letter-filter span.active {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+thead {
+  background-color: #110000;
+}
+
+th, td {
+  padding: 12px 10px;
+  color: #ffffff;
+  text-align: left;
+  border: 1px solid #ff0000;
+}
+
+th {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+td a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+tr:hover td {
+  background-color: #110000;
+  transform: scale(1.01);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.85em;
+  color: #aaaaaa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #000000;
+  }
+
+  td {
+    padding: 8px 0;
+    position: relative;
+    border: 1px solid #ff0000;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #ff0000;
+    display: inline-block;
+    width: 100px;
+  }
+
+  td span {
+    display: inline-block;
+    margin-left: 10px;
+    word-break: break-word;
+    max-width: calc(100% - 110px);
+  }
+}

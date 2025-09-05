@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyvern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#" class="nav-link">Home</a>
+    <a href="path/to/your/app.apk" class="nav-link" download>Download</a>
+    <a href="https://github.com/haithamaouati" target="_blank" class="nav-link">GitHub</a>
+    <a href="https://t.me/haithamaouati" target="_blank" class="nav-link">Telegram</a>
+  </nav>
+
+  <img src="logo.png" alt="Wyvern Logo" class="logo">
+  <h1>Wyvern</h1>
+
+  <p class="description">
+    A repo that fetches & lists all Termux available package info such as package, version, description, and homepage.
+  </p>
+
+  <p id="stats">
+    Available packages: <span id="package-count" class="highlight">0</span>
+  </p>
+
+  <!-- Search input -->
+  <input type="text" id="search" placeholder="Search packages...">
+
+  <!-- A-Z filter -->
+  <div id="letter-filter"></div>
+
+  <!-- Table -->
+  <table id="package-table">
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th>Version</th>
+        <th>Description</th>
+        <th>Homepage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data injected by JS -->
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+  <footer>
+    Developed with <span class="highlight">♥︎</span> by 
+    <a href="https://github.com/haithamaouati" target="_blank" class="highlight-link">
+      Haitham Aouati
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
